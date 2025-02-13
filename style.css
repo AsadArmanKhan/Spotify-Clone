@@ -1,0 +1,602 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #E7E7E7;
+}
+
+a {
+    text-decoration: none;
+    /* outline: none; */
+    background-color: inherit;
+    color: inherit;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    width: 100%;
+    /* border: solid black 1px; */
+}
+
+.header {
+    width: 100%;
+    border: solid black 1px;
+    display: flex;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    background-color: black;
+    justify-content: space-between;
+}
+
+.header-left {
+    display: flex;
+    /* margin-top: 10px; */
+    align-items: center;
+}
+
+.spotify-icon i {
+    font-size: 35px;
+    cursor: pointer;
+    /* background-color: #fff; */
+    color: #fff;
+    margin: 10px 20px;
+    padding-left: 10px;
+}
+
+.home-icon {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    /* border: solid white 1px; */
+    border-radius: 50%;
+    /* margin-right: 10px; */
+    background-color: #1F1F1F;
+}
+.home-icon:hover{
+    scale: 1.1;
+}
+
+.spotify-icon {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.home-icon i {
+    font-size: 35px;
+    /* background-color: #fff; */
+    color: #fff;
+    /* border: solid white 1px; */
+    /* margin: auto; */
+    padding: 10px 10px;
+    font-size: 22px;
+}
+
+.input {
+    width: 500px;
+    background-color: #292929;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 24px;
+    margin-top: 5px;
+    padding: 8px 0px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.input:hover{
+filter: brightness(1.3);
+/* border: solid 1px #b3b3b350; */
+transition: 0.5s;
+}
+
+.input>i {
+    /* padding: 10px; */
+    color: white;
+    width: 40px;
+    cursor: pointer;
+    padding-left: 15px;
+    padding-right: 40px;
+    font-size: 20px;
+}
+.input i:hover{
+    scale: 1.07;
+}
+
+.input input {
+    width: 82%;
+    padding: 5px 0px;
+    height: 100%;
+    font-size: 18px;
+    color: white;
+    border: none;
+    outline: none;
+    border-right: 1px solid white;
+    background-color: inherit;
+    /* font-size: 14px; */
+}
+
+.header-right {
+    margin-top: 10px;
+    display: flex;
+    /* border: solid white 1px; */
+    align-items: center;
+    justify-content: center;
+}
+
+.r-1 {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    width: 280px;
+    /* gap: 10px; */
+    letter-spacing: 3px;
+    /* border: solid white 1px; */
+}
+
+.line {
+    display: flex;
+    height: 30px;
+    border: solid 1px #ABABAB;
+    margin-right: 25px;
+    /* margin-left: 25px; */
+}
+.r-2 {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    width: 296px;
+    gap: 20px;
+    /* border: solid white 1px; */
+}
+
+.upper-same1 {
+    color: #ABABAB;
+    font-weight: 600;
+    width: 86px;
+    /* letter-spacing: 2px; */
+    font-size: 14px;
+    transition: 0.1s;
+}
+.upper-same1:hover{
+cursor: pointer;
+transition: 0.1s;
+scale: 1.1;
+color: white;
+}
+.upper-same22:hover{
+    scale: 1.1;
+    transition: 0.1s;
+    cursor: pointer;
+    color: white;
+    }
+.upper-same22 {
+    color: #ABABAB;
+    font-weight: 600;
+    transition: 0.1s;
+    width: 100px;
+    /* letter-spacing: 2px; */
+    font-size: 14px;
+}
+.upper-same22 i{
+    color: #b3b3b3;
+}
+.upper-same22:hover i{
+    color: white;
+}
+
+.upper-same2 {
+    color: #ABABAB;
+    font-weight: 600;
+    /* width: 50px; */
+    transition: 0.1s;
+    /* letter-spacing: 2px; */
+    font-size: 14px;
+}
+.upper-same2:hover{
+    color: white;
+    scale: 1.1;
+    transition: 0.1s;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+.upper-same3 {
+    width: 100px;
+    /* border: solid white 1px; */
+    border-radius: 24px;
+    display: flex;
+    transition: 0.1s;
+    padding: 13px 20px 13px 20px;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+    color: black;
+    font-weight: 600;
+}
+.upper-same3:hover {
+    width: 100px;
+    cursor: pointer;
+    border-radius: 24px;
+    display: flex;
+    transition: 0.1s;
+    padding: 13px 20px 13px 20px;
+    align-items: center;
+    background-color: #f6e6e6;
+    scale: 1.07;
+    justify-content: center;
+    color: black;
+    font-weight: 600;
+}
+
+.section-main {
+    width: 100%;
+    /* border: solid white 1px; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.section-left {
+    width: 28%;
+    /* position: sticky; */
+    /* top: 0px; */
+    /* margin-left: 10px; */
+    margin-bottom: 50px;
+    background-color: #121212;
+    border-radius: 15px;
+    /* height: 600px; */
+    /* border: solid white 1px; */
+}
+
+.section-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* border: solid 1px white; */
+    width: 100%;
+    /* position: sticky; */
+    /* box-shadow: 0px 1px 4px 0px black; */
+    /* top: 0px; */
+    background-color: #121212;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.library {
+    /* border: solid white 1px; */
+    /* width: 50%; */
+    /* font-size: 18px; */
+    /* z-index: 1; */
+    font-weight: 600;
+    color: #B3B3B3;
+    margin-bottom: 20px;
+    transition: 0.2s;
+    padding: 10px 0px;
+}
+.library:hover{
+    filter: brightness(200%);
+    cursor: pointer;
+    transition: 0.2s;
+}
+.library i {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    color: #B3B3B3;
+}
+
+.plus {
+    margin-right: 10px;
+    font-size: 30px;
+    color: #B3B3B3;
+    margin-bottom: 20px;
+    transition: 0.2s;
+}
+.plus:hover{
+    filter: brightness(200%);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.section-2 {
+    width: 96%;
+    background-color: #1F1F1F;
+    margin: 20px auto;
+    padding: 15px 20px;
+    font-size: 14px;
+    font-weight: 900;
+    border-radius: 7px;
+}
+
+.easy {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.playlist {
+    width: 125px;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 7px 10px;
+    font-size: 13px;
+    /* border: solid white 1px; */
+    color: #121212;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: 0.1s;
+    background-color: white;
+}
+.playlist:hover {
+    transition: 0.1s;
+    scale: 1.07;
+    width: 125px;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 7px 10px;
+    font-size: 13px;
+    /* border: solid white 1px; */
+    color: #121212;
+    font-weight: bolder;
+    background-color: #dcd7d7;
+}
+.playlist2 {
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px 10px;
+    color: #121212;
+    font-weight: bolder;
+    font-size: 13px;
+    background-color: white;
+}
+.playlist2:hover {
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px 10px;
+    cursor: pointer;
+    color: #121212;
+    scale: 1.07;
+    font-size: 13px;
+    background-color: #dcd7d7;
+}
+
+.section-3 {
+    font-size: 12px;
+    color: #d7d7caae;
+    word-spacing: 15px;
+    line-height: 30px;
+    cursor: pointer;
+    padding-left: 20px;
+}
+.section-3>b{
+    text-decoration: none;
+}
+.section-3 b:hover{
+    text-decoration: underline;
+}
+.browse {
+    width: 100px;
+    text-align: center;
+    padding: 3px 0px;
+    border: solid 1px #B3B3B3;
+    border-radius: 25px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.browse i {
+    padding-right: 5px;
+    font-size: 15px;
+}
+
+.right-section {
+    width: 71%;
+    height: 100vh;  
+    overflow-y: scroll;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    background: fixed;
+    /* overflow:hidden; */
+    background-color: #121212;
+    /* border: solid white 1px; */
+}
+
+.top-section-1 {
+    padding: 10px 0px 0px 10px;
+    margin-bottom: 30px;
+}
+
+.heading-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Popular-Artist {
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: -1px;
+}
+
+.Popular-Artist:hover {
+    line-height: -1;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.Popular-Artist1 {
+    font-size: 15px;
+    color: #B3B3B3;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+.Popular-Artist1:hover {
+    line-height: -1;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.Singers-portion {
+    display: flex;
+    /* width: 100%; */
+    margin-top: 5px;
+    transition: 0.2s;
+    /* gap: 10px; */
+
+}
+
+.Singers {
+    width: 16%;
+    margin-right: 10px;
+    position: relative;
+    transition: 0.2s;
+    padding: 10px 5px 10px 10px;
+    /* border: solid white 1px; */
+}
+
+.Singers:hover {
+    background-color: #1F1F1F;
+    border-radius: 10px;
+}
+
+.img img {
+    background: cover;
+    width: 150px;
+    height: 150px;
+    /* border: solid white 1px; */
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.Name {
+    margin-bottom: 7px;
+    font-weight: 600;
+    /* width: 107px; */
+}
+
+.Name:hover{
+    cursor: pointer;
+ text-decoration: underline;
+}
+.singing {
+    font-weight: bold;
+    font-size: 14px;
+    color: #B3B3B3;
+    cursor: pointer;
+}
+
+.singing:hover{
+    text-decoration: underline;
+}
+.footer {
+    width: 100%;
+    padding: 10px 30px;
+}
+
+.social-media-platform {
+    display: flex;
+}
+
+.enquery {
+    color: #b3b3b3;
+    font-size: 14px;
+}
+.enquery:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: white;
+    /* font-weight: bold; */
+}
+
+
+.footer-first {
+    padding-bottom: 40px;
+}
+
+.footer-first h3 {
+    color: white;
+    font-size: 14px;
+}
+.social-media-platform{
+    gap: 20px;
+    color: white;
+}
+.instagram{
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+    /* border: solid white 1px; */
+    border-radius: 50%;
+    background-color: #2A2A2A;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.instagram a img {
+    width: 25px;
+    filter: brightness(1200%);
+    color: white;
+    /* border: solid white 1px; */
+    height: 25px;
+    background-color: none;
+    font-size: 20px;
+}
+.instagram:hover{
+    filter: brightness(200%);
+}
+
+.for-border {
+    line-height: 30px;
+    display: flex;
+    width: 100%;
+    gap: 100px;
+    border-bottom: solid #2A2A2A 1px;
+    margin-bottom: 40px;
+}
+.the-end{
+    font-size: 13px;
+    margin-bottom: 69px;
+}
+.Play-button i{
+color: black;
+/* transition: 0.2s; */
+font-size: 22px;
+}
+
+.Play-button{
+    position: absolute;
+    cursor: pointer;
+    top: 120px;
+    left: 100px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #3BE477;
+    color: black;
+    height: 50px;
+    /* transition: 0.2s; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: solid green 1px; */
+    visibility: hidden;
+}
+.Singers:hover .Play-button{
+visibility: visible;
+top: 100px;
+transition: 0.2s;
+}
+.Play-button:hover{
+    scale: 1.1;
+}
