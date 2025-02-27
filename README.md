@@ -14,15 +14,15 @@ Sidebar for navigation
 
 Technologies Used
 
-HTML
+* HTML
 
-CSS
+* CSS
 
 How to Use
 
 Clone the repository:
 
-git clone <>
+git clone <https://github.com/AsadArmanKhan/abcd/blob/main/index.html>
 
 Navigate to the project folder:
 
